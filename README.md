@@ -8,7 +8,7 @@ Then malware creates AES key to encrypt every possible file in system. Time of e
 If encryption completes, AES key will be encrypted by RSA key and stored in the directory created during attack containing list of encrypted files, RSA key and encrypted AES key.
 Next step is ransom request:
 
-![OknoInformujaceOAtaku](https://github.com/KubickiKacper/Cryptovirus/assets/82718318/053e65b2-faec-44fa-867d-2134b6ffb694)
+![OknoInformujaceOAtaku](https://github.com/KubickiKacper/Cryptovirus/assets/82718318/c5053469-7b36-41b9-8c15-2714bb67a239)
 
 If victim pay, he will have opportunity to decrypt his files, otherwise, decryption keys stored in database would be deleted in 72 hours by TTL mechanism of MongoDB.
 After sending victim's BTC address of payment, he needs to use decryption button. Ransomware will get RSA private key, to decrypt AES key, and decrypt all files in PC.
